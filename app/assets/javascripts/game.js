@@ -26,4 +26,5 @@ function fill_inital_cell(cell_data) {
   var cell_color = cell_data.player.color
   cell_container.css('background-color', cell_color)
   cell_container.css('display', 'block')
+  cell_container.attr('title', cell_data.player.player_name)
 }

@@ -51,6 +51,7 @@ function change_cell(payload) {
   var cell_container = $(".cell_container[attr-pos=" + cell_pos + "]");
   cell_container.css('background-color', payload.player_color)
   cell_container.css('display', 'block')
+  cell_container.attr('title', payload.player_name)
 }
 
 function add_player(payload) {
@@ -58,4 +59,5 @@ function add_player(payload) {
   var cell_container = $(".cell_container[attr-pos=" + cell_pos + "]");
   cell_container.css('background-color', payload.player_color)
   cell_container.css('display', 'block')
+  cell_container.attr('title', payload.player_name)
 }

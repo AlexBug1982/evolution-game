@@ -18,6 +18,7 @@ module CellServices::Runtime
             if service.new_cell.present?
               payload = {
                 player_color: player.color,
+                player_name: player.player_name,
                 cell_pos_x: service.new_cell.pos_x,
                 cell_pos_y: service.new_cell.pos_y
               }

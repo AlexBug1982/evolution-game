@@ -5,6 +5,7 @@ class AddNewPlayerJob < ApplicationJob
     world = player.world
     payload = {
       player_color: player.color,
+      player_name: player.player_name,
       cell_pos_x: player.cells.first.pos_x,
       cell_pos_y: player.cells.first.pos_y
     }

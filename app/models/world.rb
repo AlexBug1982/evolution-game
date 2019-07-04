@@ -24,7 +24,7 @@ class World < ApplicationRecord
   end
 
   def json_cells
-    cells.to_json(:only => [ :pos_x, :pos_y ], :include => { :player => {:only => :color}})
+    cells.to_json(:only => [ :pos_x, :pos_y ], :include => { :player => {:only => [:color, :player_name]}})
   end
 
   private
