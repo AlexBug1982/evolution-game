@@ -14,13 +14,14 @@ ActiveAdmin.register Player do
     column :player_name
     column :created_at
     column :world
+    column :color
     actions
   end
 
   form do |f|
     f.inputs 'Player' do
       f.input :player_name
-      f.input :color
+      f.input :color, :as => :string
     end
     f.actions
   end
