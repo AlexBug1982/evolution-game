@@ -1,3 +1,3 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: '"buyafeature.online" <no-reply@buyafeature.online>'
+  default from: '"evolution.game" <no-reply@gmail.com>'
 end

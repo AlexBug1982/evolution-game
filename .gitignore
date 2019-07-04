@@ -22,6 +22,8 @@
 /public/assets
 .byebug_history
 
+/config/initializers/01_development_env.rb
+
 test/reports/
 
 # Ignore master key for decrypting credentials and more.

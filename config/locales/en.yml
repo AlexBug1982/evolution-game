@@ -49,10 +49,7 @@ en:
         security:
           title: "Security"
           description: "We want our application to be safe and hope bots do not solve this security question"
-        hint_accept_privacy_policy_and_terms: "I accept the privacy policy and terms to proceed"
-        signup_button: "Create account"
-        success: "We created your account. Now you can proceed and create your first session."
-        after_signup_button: "Proceed"
+        signup_button: "Create player"
   custom_errors:
     customer_support: "Customer service"
     title: Sorry! Something went wrong.
@@ -60,10 +57,8 @@ en:
     not_found: The requested page does not exist.
     support: "We will take care of your problem immediately. If you have any questions, please write to our customer service"
   form_errors:
-    bid_session_topic_can_t_be_blank: "Please fill in the topic"
-    feature_title_can_t_be_blank: "Please fill in the title"
-    feature_prize_is_not_a_number: "Please fill in a prize greater 1"
-    feature_prize_must_be_greater_than_or_equal_to_1: "Please fill in a prize greater 1"
     calculation_wrong: "Your calculation is wrong. Please try again"
     player_name_missing: "Please fill in your name"
     color_missing: "Please add your color as Hex Color Code. e.g.: #ffaa22"
+    color_wrong_format: "Please add your color as Hex Color Code. e.g.: #ffaa22"
+    player_name_already_registered: "This playername already exists. Choose another one"

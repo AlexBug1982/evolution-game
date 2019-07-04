@@ -16,6 +16,16 @@ module PlayerServices::Persist::Modules::PlayerCreator
     end # existing_player.present?
     return unless valid?
 
+    if create_params[:color].size < 7
+      add_new_error('color', 'wrong format')
+    end # existing_player.present?
+    return unless valid?
+
+    if create_params[:color].first != '#'
+      add_new_error('color', 'wrong format')
+    end # existing_player.present?
+    return unless valid?
+
     player_params = {
       player_name: create_params[:player_name],
       color: create_params[:color],

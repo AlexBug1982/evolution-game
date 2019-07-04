@@ -18,14 +18,14 @@ module WeSourceChat
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
 
-    config.action_mailer.default_url_options = { host: 'buyafeature.online' }
+    config.action_mailer.default_url_options = { host: 'gmail.com' }
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address:              'email-smtp.eu-west-1.amazonaws.com',
       port:                 587,
-      domain:               'buyafeature.online',
-      user_name:            'AKIAJXZWPTR2LLWQ5ALA',
-      password:             'AuihlQpNQEtnVoSqzPhn8XB7QvrTZ69/+lblp0DV2cqR',
+      domain:               'gmail.com',
+      user_name:            'username',
+      password:             'password',
       authentication:       'login',
       enable_starttls_auto: true
     }

@@ -83,7 +83,7 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "wesource_chat_#{Rails.env}"
   config.action_mailer.perform_caching = false
-  host = 'www.buyafeature.online'
+  host = 'www.evolution-game.io'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   # Ignore bad email addresses and do not raise email delivery errors.

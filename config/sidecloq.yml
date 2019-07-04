@@ -1,19 +1,19 @@
 production:
   create_cells_job:
     class: CreateCellsJob
-    cron: "* * * * *"
+    cron: "*/10 * * * *"
     queue: "default"
 staging:
   create_cells_job:
     class: CreateCellsJob
-    cron: "* * * * *"
+    cron: "*/10 * * * *"
     queue: "default"
   create_cells_job:
     class: CreateCellsJob
-    cron: "* * * * *"
+    cron: "*/10 * * * *"
     queue: "default"
 development:
   create_cells_job:
     class: CreateCellsJob
-    cron: "* * * * *"
+    cron: "*/10 * * * *"
     queue: "default"
