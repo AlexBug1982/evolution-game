@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Demo:
+https://evolution-game-io.herokuapp.com/
 
-Things you may want to cover:
+## Tech-stack
 
-* Ruby version
+* Rails 5
+* Actioncable
+* Bootstrap
 
-* System dependencies
+## Tech-requirements
 
-* Configuration
+### Ruby version
+2.5.1
 
-* Database creation
+### System dependencies
 
-* Database initialization
+* Redis
+* Postgres
 
-* How to run the test suite
+### Local start
 
-* Services (job queues, cache servers, search engines, etc.)
+* Start Redis
+* Start Sidekiq
+* Start Rails Server
 
-* Deployment instructions
+## Contribution
 
-* ...
+You are welcome if you would like to help making this game great. But you can also take this Repo as an example if you want to learn how Rails with Actioncable works.
