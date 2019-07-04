@@ -1,0 +1,69 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  welcome:
+    head:
+      title: "Evolution Game"
+      description: "Choose your color and see if you can win the evolution game"
+      keywords: "evolution game"
+  player:
+    dashboard:
+      signup_form:
+        title: "Create player"
+        player_name:
+          label: "Your name"
+          placeholder: "John"
+        player_color:
+          label: "Your color"
+          placeholder: "#ffee22"
+        security:
+          title: "Security"
+          description: "We want our application to be safe and hope bots do not solve this security question"
+        hint_accept_privacy_policy_and_terms: "I accept the privacy policy and terms to proceed"
+        signup_button: "Create account"
+        success: "We created your account. Now you can proceed and create your first session."
+        after_signup_button: "Proceed"
+  custom_errors:
+    customer_support: "Customer service"
+    title: Sorry! Something went wrong.
+    try_again: Please try again.
+    not_found: The requested page does not exist.
+    support: "We will take care of your problem immediately. If you have any questions, please write to our customer service"
+  form_errors:
+    bid_session_topic_can_t_be_blank: "Please fill in the topic"
+    feature_title_can_t_be_blank: "Please fill in the title"
+    feature_prize_is_not_a_number: "Please fill in a prize greater 1"
+    feature_prize_must_be_greater_than_or_equal_to_1: "Please fill in a prize greater 1"
+    calculation_wrong: "Your calculation is wrong. Please try again"
+    player_name_missing: "Please fill in your name"
+    color_missing: "Please add your color as Hex Color Code. e.g.: #ffaa22"

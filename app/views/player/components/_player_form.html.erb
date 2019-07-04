@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div id='sign_up_as_player' class="row main justify-content-md-center">
+    <div class="col-navbar-margin col-lg-6">
+      <div class="card border-box">
+        <div class="card-header">
+          <h2><%= translate_with_user_language('player.dashboard.signup_form.title') %></h2>
+        </div>
+        <div class="card-body">
+          <%= form_tag({controller: 'player', action: "create_player"}, method: "post", remote: true) do %>
+            <div class="form-group col-md-12 mb-12">
+              <label for='player_player_name'><%= translate_with_user_language('player.dashboard.signup_form.player_name.label') %></label>
+              <%= text_field_tag(:player_name, '' , class: 'form-control mandatory', placeholder: translate_with_user_language('player.dashboard.signup_form.player_name.placeholder')) %>
+              <div class='invalid-feedback player_name'></div>
+            </div>
+            <div class="form-group col-md-12 mb-12">
+              <label for='player_color'><%= translate_with_user_language('player.dashboard.signup_form.player_color.label') %></label>
+              <%= text_field_tag(:color, '' , class: 'form-control mandatory', placeholder: translate_with_user_language('player.dashboard.signup_form.player_color.placeholder')) %>
+              <div class='invalid-feedback color'></div>
+            </div>
+            <div class='security mt-2'>
+              <div class="col-md-12 mb-12">
+                <h5 class="card-title"><%= translate_with_user_language('player.dashboard.signup_form.security.title') %></h5>
+                <p><%= translate_with_user_language('player.dashboard.signup_form.security.description') %></p>
+              </div>
+
+              <div class="form-row col-md-12 mb-12">
+                <div id='calculation_img_container' class="form-group col-md-2 mb-3">
+                  <img src="<%= image_url('self_signup_calculation.png')%>" alt="self_signup_calculation">
+                </div>
+                <div class="form-group col-md-4 mb-3">
+                  <%= text_field_tag(:calculation, '', class: 'form-control') %>
+                </div>
+                <div class='invalid-feedback calculation'></div>
+              </div>
+            </div>
+            <div class="form-group col-md-12 mb-12">
+              <div class='invalid-feedback player_base'></div>
+            </div>
+            <%= submit_tag(translate_with_user_language('player.dashboard.signup_form.signup_button'), id: "signup_button", class: "btn btn-primary mb-2") %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

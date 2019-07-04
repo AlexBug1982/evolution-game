@@ -1,0 +1,68 @@
+# == Schema Information
+#
+# Table name: players
+#
+#  id            :bigint(8)        not null, primary key
+#  session_token :string
+#  player_name   :string           not null
+#  color         :string           not null
+#  world_id      :bigint(8)
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+player_one:
+  id: 1
+  session_token: "ashgfajsfajgfjgfa"
+  player_name: "player_one"
+  world_id: 1
+  color: 'ffffff'
+
+player_two:
+  id: 2
+  session_token: "hsakjhfkajfsh"
+  player_name: "player_two"
+  world_id: 1
+  color: 'eeeeee'
+
+player_three:
+  id: 3
+  session_token: "jkashfjk"
+  player_name: "player_three"
+  world_id: 2
+  color: 'aaaaaa'
+
+player_four:
+  id: 4
+  session_token: "jkashkja"
+  player_name: "player_four"
+  world_id: 3
+  color: '111111'
+
+player_five:
+  id: 5
+  session_token: "kjshfkjahf"
+  player_name: "player_five"
+  world_id: 4
+  color: '222222'
+
+player_six:
+  id: 6
+  session_token: "skdfkhjg"
+  player_name: "player_six"
+  world_id: 5
+  color: 'ffee44'
+
+player_seven:
+  id: 7
+  session_token: "asjaghfjsaf"
+  player_name: "player_seven"
+  world_id: 5
+  color: 'ffaa44'

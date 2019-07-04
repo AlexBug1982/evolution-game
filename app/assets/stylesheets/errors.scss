@@ -1,0 +1,37 @@
+@import "./components/_variables.scss";
+
+.exception {
+  display: block;
+  margin: auto;
+  max-width: 450px;
+  min-width: 350px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 2.5em;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+  }
+
+  a,
+  h1,
+  h2,
+  p {
+    color: $primary;
+    text-align: center;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

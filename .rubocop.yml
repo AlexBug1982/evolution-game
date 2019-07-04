@@ -1,0 +1,29 @@
+AllCops:
+  DisabledByDefault: false
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+
+Metrics/LineLength:
+  Max: 220
+
+Documentation:
+  Enabled: false
+
+GlobalVars:
+  AllowedVariables:
+    - $redis
+    - $d
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Metrics/LineLength:
+  Enabled: false
+
+Style:
+  Enabled: true
+Style/CommentedKeyword:
+  Enabled: false

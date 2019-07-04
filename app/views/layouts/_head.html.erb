@@ -1,0 +1,11 @@
+
+  <title><%= translate_with_user_language('welcome.head.title') %></title>
+  <meta name="application-name" content="<%= translate_with_user_language('welcome.head.title') %>">
+  <meta name="description" content="<%= translate_with_user_language('welcome.head.description') %>">
+  <meta name="keywords" content="<%= translate_with_user_language('welcome.head.keywords') %>">
+  <%= csrf_meta_tags %>
+  <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>

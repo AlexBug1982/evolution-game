@@ -1,0 +1,61 @@
+function subscripeToChannel(world_slug) {
+  var preventMultipleSubscripe = false
+  for (var i = 0; i < App.cable.subscriptions.subscriptions.length; i++) {
+    var s = App.cable.subscriptions.subscriptions[i]
+    var JSONObject = JSON.parse(s.identifier);
+    var room = JSONObject["room"];
+    if (room == world_slug)
+    {
+      preventMultipleSubscripe = true;
+    }
+  }
+  if (preventMultipleSubscripe == true)
+  {
+    return;
+  }
+  App['room' + world_slug] = App.cable.subscriptions.create({channel: 'WorldChannel', room: world_slug}, {
+    received: function(data) {
+      if (data == null)
+      {
+        return;
+      }
+      onReceiveMessage(data)
+    },
+    disconnected: function () {
+      App.cable.subscriptions.remove(this)
+    },
+    connected: function () {
+
+    },
+    setWorldSlug: function(world_slug) {
+      this.world_slug = world_slug
+    }
+  });
+}
+
+function onReceiveMessage(data) {
+  switch (data.type) {
+    case 'new_cell':
+      change_cell(data.payload)
+      break;
+    case 'new_player':
+      add_player(data.payload)
+      break;
+    default:
+      break;
+  }
+}
+
+function change_cell(payload) {
+  var cell_pos = payload.cell_pos_x + "_" + payload.cell_pos_y
+  var cell_container = $(".cell_container[attr-pos=" + cell_pos + "]");
+  cell_container.css('background-color', payload.player_color)
+  cell_container.css('display', 'block')
+}
+
+function add_player(payload) {
+  var cell_pos = payload.cell_pos_x + "_" + payload.cell_pos_y
+  var cell_container = $(".cell_container[attr-pos=" + cell_pos + "]");
+  cell_container.css('background-color', payload.player_color)
+  cell_container.css('display', 'block')
+}

@@ -1,0 +1,19 @@
+production:
+  create_cells_job:
+    class: CreateCellsJob
+    cron: "* * * * *"
+    queue: "default"
+staging:
+  create_cells_job:
+    class: CreateCellsJob
+    cron: "* * * * *"
+    queue: "default"
+  create_cells_job:
+    class: CreateCellsJob
+    cron: "* * * * *"
+    queue: "default"
+development:
+  create_cells_job:
+    class: CreateCellsJob
+    cron: "* * * * *"
+    queue: "default"

@@ -1,0 +1,11 @@
+<div id='errors'>
+  <% if @errors %>
+    <div class="alert alert-danger">
+        <% @errors.each do |type, messages|%>
+          <span class="fa fa-exclamation-circle" aria-hidden="true"></span><%messages.each do |msg|%>
+            <%=type%> <%=msg%>
+          <%end%>
+        <%end%>
+    </div>
+  <%end%>
+</div>

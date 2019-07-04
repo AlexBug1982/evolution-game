@@ -1,0 +1,8 @@
+{
+  "name": "evolution_game",
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rake db:migrate"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <%= render partial: "layouts/head" %>
+    <%= javascript_include_tag 'game', 'data-turbolinks-track' => 'reload' %>
+
+  </head>
+  <body>
+    <div id="game">
+
+    </div>
+    <script>
+    fillGame('<%= @world.width %>', '<%= @world.height %>', '<%= @world.json_cells %>')
+    $(document).on('turbolinks:load', function () {
+      subscripeToChannel('<%= @world.slug %>');
+    });
+    </script>
+  </body>
+</html>

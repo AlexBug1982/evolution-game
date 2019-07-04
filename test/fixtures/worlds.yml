@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: worlds
+#
+#  id         :bigint(8)        not null, primary key
+#  slug       :string           not null
+#  width      :integer          not null
+#  height     :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+world_one:
+  id: 1
+  slug: HGFHJJHHKJH
+  width: 120
+  height: 60
+
+world_two:
+  id: 2
+  slug: JHFHFHKGK
+  width: 1
+  height: 1
+
+world_three:
+  id: 3
+  slug: GJGJKGJGJ
+  width: 2
+  height: 1
+
+world_four:
+  id: 4
+  slug: HFHFHFH
+  width: 1
+  height: 2
+
+world_five:
+  id: 5
+  slug: TCJVJGJG
+  width: 2
+  height: 1

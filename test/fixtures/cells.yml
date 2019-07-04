@@ -1,0 +1,68 @@
+# == Schema Information
+#
+# Table name: cells
+#
+#  id         :bigint(8)        not null, primary key
+#  pos_x      :integer          not null
+#  pos_y      :integer          not null
+#  player_id  :bigint(8)
+#  world_id   :bigint(8)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+cell_one:
+  id: 1
+  pos_x: 20
+  pos_y: 10
+  player_id: 2
+  world_id: 1
+
+cell_two:
+  id: 2
+  pos_x: 21
+  pos_y: 10
+  player_id: 2
+  world_id: 1
+
+cell_three:
+  id: 3
+  pos_x: 20
+  pos_y: 11
+  player_id: 2
+  world_id: 1
+
+cell_four:
+  id: 4
+  pos_x: 0
+  pos_y: 0
+  player_id: 3
+  world_id: 2
+
+cell_five:
+  id: 5
+  pos_x: 0
+  pos_y: 0
+  player_id: 4
+  world_id: 3
+
+cell_six:
+  id: 6
+  pos_x: 0
+  pos_y: 0
+  player_id: 5
+  world_id: 4
+
+cell_seven:
+  id: 7
+  pos_x: 0
+  pos_y: 0
+  player_id: 6
+  world_id: 5
+
+cell_eight:
+  id: 8
+  pos_x: 1
+  pos_y: 0
+  player_id: 7
+  world_id: 5
