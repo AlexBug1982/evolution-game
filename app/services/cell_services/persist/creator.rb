@@ -92,6 +92,7 @@ module CellServices::Persist
       player_strength = player_cell.player.color.to_i(16) % 16
       other_strength = other_cell.player.color.to_i(16) % 16
       if player_strength >= other_strength
+        other_cell.update_attributes(player: player)
         other_cell
       else
         nil

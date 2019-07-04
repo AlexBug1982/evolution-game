@@ -88,6 +88,7 @@ class CreatorTest < ActionView::TestCase
     new_cell = service.new_cell
     assert_equal new_cell.pos_x, 1
     assert_equal new_cell.pos_y, 0
+    assert_equal new_cell.player, player
   end
 
 
