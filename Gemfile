@@ -14,7 +14,7 @@ gem 'sprockets', '~> 3.7.0'
 # gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Use SCSS for stylesheets
 gem 'popper_js', '~> 1.14.3'
-gem 'bootstrap', '~> 4.x'
+gem "bootstrap", ">= 4.3.1"
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -28,7 +28,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'http_accept_language'
 
 gem 'activeadmin'
-gem 'devise'
+gem "devise", ">= 4.6.0"
+gem "actionview", ">= 5.1.6.2"
+
 
 gem 'truncato'
 
