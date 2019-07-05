@@ -28,3 +28,6 @@ https://evolution-game-io.herokuapp.com/
 ## Contribution
 
 You are welcome if you would like to help making this game great. But you can also take this Repo as an example if you want to learn how Rails with Actioncable works.
+
+
+Copyright © 2019 Alexander Bahlk, released under the MIT license
