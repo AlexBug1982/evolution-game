@@ -9,7 +9,7 @@ gem 'pg', '1.1'
 gem 'crypt_keeper', '~> 2.0.0.rc2'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.12'
 gem 'sprockets', '~> 3.7.0'
 # gem 'sprockets-rails', :require => 'sprockets/railtie'
 # Use SCSS for stylesheets
